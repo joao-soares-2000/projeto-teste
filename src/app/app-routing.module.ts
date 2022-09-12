@@ -1,11 +1,21 @@
-import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
+import { CadastroProdutosComponent } from './components/cadastro-produtos/cadastro-produtos.component';
+import { HomeComponent } from './components/home/home.component';
+import { ListaProdutosComponent } from './components/lista-produtos/lista-produtos.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path:'',
+    component: HomeComponent
+  },
+  {
+    path:'lista-produtos',
     component: ListaProdutosComponent
+  },
+  {
+    path:'cadastro-produtos',
+    component: CadastroProdutosComponent
   }
 ];
 
