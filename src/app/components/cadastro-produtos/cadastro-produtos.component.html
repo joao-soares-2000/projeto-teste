@@ -1,1 +1,33 @@
-<p>cadastro-produtos works!</p>
+<h1>
+  Cadastro de produtos
+</h1>
+
+<form action="" class="main-form">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <input type="text" name="descricao" id="descricao" class="form-control" required minlength=3>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label for="unMedida">Unidade de Medida</label>
+        <input type="text" name="unMedida" id="unMedida" class="form-control" required minlength=2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="ncm">Codigo Ncm</label>
+        <input type="text" name="ncm" id="ncm" class="form-control" required minlength=8>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary">Cadastrar</button>
+  <button type="button" (click)="cancel()" class="btn btn-danger">Cancelar</button>
+</form>

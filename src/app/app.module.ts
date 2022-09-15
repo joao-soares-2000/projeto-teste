@@ -9,6 +9,7 @@ import { ListaProdutosComponent } from './components/lista-produtos/lista-produt
 import { NavComponent } from './templates/nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './templates/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListaProdutosComponent,
     HomeComponent,
     NavComponent,
-    CadastroProdutosComponent
+    CadastroProdutosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
