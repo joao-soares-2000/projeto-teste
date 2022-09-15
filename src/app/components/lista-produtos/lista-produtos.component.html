@@ -1,1 +1,18 @@
-<p>teste</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">DESCRIÇÃO</th>
+      <th scope="col">UNIDADE MEDIDA</th>
+      <th scope="col">NCM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ produto.descricao }}</td>
+      <td>{{ produto.unMedida}}</td>
+      <td>{{ produto.ncm }}</td>
+    </tr>
+    </tbody>
+</table>

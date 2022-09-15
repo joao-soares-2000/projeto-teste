@@ -10,7 +10,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path:'lista-produtos',
+    path:'produtos',
     component: ListaProdutosComponent
   },
   {
