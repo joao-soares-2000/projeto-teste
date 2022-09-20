@@ -1,6 +1,6 @@
 export interface  Produto{
   id?: number;
   descricao: String;
-  unMedida: String;
+  unmedida: String;
   ncm: String;
 }

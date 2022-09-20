@@ -17,4 +17,9 @@ export class ProdutosService {
     const url = `${this.baseUrl}/produtos`
     return this.http.get<Produto[]>(url)
   }
+
+  create(produto: Produto): Observable<Produto> {
+    const url = `${this.baseUrl}/produtos`
+    return this.http.post<Produto>(url, produto)
+  }
 }

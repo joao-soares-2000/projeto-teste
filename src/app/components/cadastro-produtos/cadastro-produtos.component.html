@@ -7,14 +7,13 @@
     <div class="col">
       <div class="form-group">
         <label for="descricao">Descrição</label>
-        <input type="text" name="descricao" id="descricao" class="form-control" required minlength=3>
+        <input type="text" name="descricao" id="descricao" class="form-control ng-invalid ng-touched" ngModel required minlength="3">
       </div>
     </div>
-
     <div class="col">
       <div class="form-group">
-        <label for="unMedida">Unidade de Medida</label>
-        <input type="text" name="unMedida" id="unMedida" class="form-control" required minlength=2>
+        <label for="unmedida">Unidade de Medida</label>
+        <input type="text" name="unmedida" id="unmedida" class="form-control" required ngModel>
       </div>
     </div>
   </div>
@@ -23,11 +22,11 @@
     <div class="col">
       <div class="form-group">
         <label for="ncm">Codigo Ncm</label>
-        <input type="text" name="ncm" id="ncm" class="form-control" required minlength=8>
+        <input type="text" name="ncm" id="ncm" class="form-control" ngModel>
       </div>
     </div>
   </div>
 
-  <button type="button" class="btn btn-primary">Cadastrar</button>
+  <button type="button" (click)="create()" class="btn btn-primary">Cadastrar</button>
   <button type="button" (click)="cancel()" class="btn btn-danger">Cancelar</button>
 </form>

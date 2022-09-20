@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroProdutosComponent } from './components/cadastro-produtos/cadastro-produtos.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListaProdutosComponent } from './components/lista-produtos/lista-produtos.component';
-import { NavComponent } from './templates/nav/nav.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './templates/footer/footer.component';
+import { NavComponent } from './templates/nav/nav.component';
+import { DataFormModule } from './components/cadastro-produtos/data-form.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { FooterComponent } from './templates/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    DataFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
