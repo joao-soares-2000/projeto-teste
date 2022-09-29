@@ -6,12 +6,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CadastroProdutosComponent } from './components/cadastro-produtos/cadastro-produtos.component';
+import { DataFormModule } from './components/cadastro-produtos/data-form.module';
 import { HomeComponent } from './components/home/home.component';
 import { ListaProdutosComponent } from './components/lista-produtos/lista-produtos.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { NavComponent } from './templates/nav/nav.component';
-import { DataFormModule } from './components/cadastro-produtos/data-form.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { DataFormModule } from './components/cadastro-produtos/data-form.module'
     ListaProdutosComponent,
     HomeComponent,
     NavComponent,
-    CadastroProdutosComponent,
     FooterComponent
   ],
   imports: [

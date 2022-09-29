@@ -2,31 +2,28 @@
   Cadastro de produtos
 </h1>
 
-<form action="" class="main-form">
+<form class="main-form" #formulario="ngForm" (ngSubmit)="create(formulario)">
   <div class="row">
     <div class="col">
-      <div class="form-group">
         <label for="descricao">Descrição</label>
-        <input type="text" name="descricao" id="descricao" class="form-control ng-invalid ng-touched" ngModel required minlength="3">
-      </div>
+        <input type="text" [(ngModel)]="produto.descricao" id="descricao" name="descricao" class="form-control" required
+        minlength=3>
     </div>
     <div class="col">
-      <div class="form-group">
         <label for="unmedida">Unidade de Medida</label>
-        <input type="text" name="unmedida" id="unmedida" class="form-control" required ngModel>
-      </div>
+        <input type="text" [(ngModel)]="produto.unmedida" id="unmedida" name="unmedida" class="form-control" required
+        minlength=3>
     </div>
   </div>
 
   <div class="row">
     <div class="col">
-      <div class="form-group">
         <label for="ncm">Codigo Ncm</label>
-        <input type="text" name="ncm" id="ncm" class="form-control" ngModel>
-      </div>
+        <input class="form-group" type="text" [(ngModel)]="produto.ncm"id="ncm" name="ncm" class="form-control" required
+        minlength=8>
     </div>
   </div>
 
-  <button type="button" (click)="create()" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">Cadastrar</button>
   <button type="button" (click)="cancel()" class="btn btn-danger">Cancelar</button>
 </form>
