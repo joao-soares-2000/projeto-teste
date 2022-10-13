@@ -1,7 +1,7 @@
-import { CadastroProdutosComponent } from './cadastro-produtos.component';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CadastroProdutosComponent } from './cadastro-produtos.component';
 
 
 
