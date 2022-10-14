@@ -11,6 +11,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ListaProdutosComponent } from './components/lista-produtos/lista-produtos.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { NavComponent } from './templates/nav/nav.component';
+import { EditarProdutosComponent } from './components/editar-produtos/editar-produtos.component';
+import { DeletarProdutosComponent } from './components/deletar-produtos/deletar-produtos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NavComponent } from './templates/nav/nav.component';
     ListaProdutosComponent,
     HomeComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    EditarProdutosComponent,
+    DeletarProdutosComponent
   ],
   imports: [
     BrowserModule,

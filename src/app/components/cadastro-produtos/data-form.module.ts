@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CadastroProdutosComponent } from './cadastro-produtos.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -10,7 +11,8 @@ import { CadastroProdutosComponent } from './cadastro-produtos.component';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgSelectModule
   ]
 })
 export class DataFormModule { }
